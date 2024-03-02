@@ -1,0 +1,47 @@
+﻿<Window x:Class="TestGetechnologiesMx.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestGetechnologiesMx.WPF"
+        mc:Ignorable="d"
+        Title="Personas" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+
+    <StackPanel Orientation="Vertical" >
+        <Label Content="Listado de personas" Margin="0 10 0 10"></Label>
+        <ListBox ItemsSource="{Binding People}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>
+                            <Label.Content>
+                                <TextBlock>
+                                    <Run Text="{Binding FirstName}" />
+                                    <Run Text="{Binding PaternalSurname}" />
+                                </TextBlock>
+                            </Label.Content>
+                        </Label>
+                        <Label>
+                            <Label.Content>
+                                <TextBlock>
+                                    <Run Text="(" />
+                                    <Run Text="{Binding Identification}" />
+                                    <Run Text=")" />
+                                </TextBlock>
+                            </Label.Content>
+                        </Label>
+                        <Button Content="Facturas" HorizontalAlignment="Right"
+                                Margin="0 0 10 0"
+                                Command="{Binding DataContext.ShowInvoicesCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="{Binding}"></Button>
+                        <Button Content="x" HorizontalAlignment="Right"
+                                Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="{Binding}"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Content="Agregar Persona" Command="{Binding AddPersonCommand}"
+                Margin="0 10 0 10"/>
+    </StackPanel>
+</Window>

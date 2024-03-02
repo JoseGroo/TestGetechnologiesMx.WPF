@@ -1,0 +1,15 @@
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\bin\Debug\net6.0\TestGetechnologiesMx.Logic.deps.json
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\bin\Debug\net6.0\TestGetechnologiesMx.Logic.dll
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\bin\Debug\net6.0\TestGetechnologiesMx.Logic.pdb
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\bin\Debug\net6.0\TestGetechnologiesMx.Repository.dll
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\bin\Debug\net6.0\TestGetechnologiesMx.Repository.pdb
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.csproj.AssemblyReference.cache
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.AssemblyInfoInputs.cache
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.AssemblyInfo.cs
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.csproj.CoreCompileInputs.cache
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.csproj.CopyComplete
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.dll
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\refint\TestGetechnologiesMx.Logic.dll
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\TestGetechnologiesMx.Logic.pdb
+C:\Users\jose_\Desktop\TestGetechnologiesMx\TestGetechnologiesMx.WPF\TestGetechnologiesMx.Logic\obj\Debug\net6.0\ref\TestGetechnologiesMx.Logic.dll

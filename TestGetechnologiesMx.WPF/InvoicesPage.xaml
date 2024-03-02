@@ -1,0 +1,83 @@
+﻿<Window x:Class="TestGetechnologiesMx.WPF.InvoicesPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestGetechnologiesMx.WPF"
+        mc:Ignorable="d"
+        Title="Facturas" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+
+    <StackPanel Orientation="Vertical" >
+
+        <Label Content="Agregar factura" Margin="0 10 0 10"></Label>
+        
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0"
+               Text="Fecha: *" VerticalAlignment="Center"/>
+            <!--<DatePicker Grid.Row="0" Grid.Column="1" 
+             Margin="5" VerticalAlignment="Center"
+             Text="{Binding Invoice.Date, Mode=TwoWay}"/>-->
+
+            <DatePicker Grid.Row="0" Grid.Column="1" 
+                        SelectedDateFormat="Short" Margin="5"
+                        FirstDayOfWeek="Monday" IsTodayHighlighted="True"    
+                        SelectedDate="{Binding Invoice.Date ,  UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0"
+               Text="Monto: *" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="1" Grid.Column="1"
+             Margin="5" VerticalAlignment="Center"
+             Text="{Binding Invoice.Amount, Mode=TwoWay}"
+                     PreviewTextInput="TextBox_PreviewTextInput"/>
+
+            <Button Grid.Row="2" Grid.Column="0" 
+            Content="Guardar" Command="{Binding SaveCommand}"
+            HorizontalAlignment="Center" Margin="5"/>
+            <Button Grid.Row="2" Grid.Column="1"
+            Content="Cancelar" HorizontalAlignment="Center"
+            Margin="5" Command="{Binding CancelCommand}"/>
+        </Grid>
+
+        <Label Content="Listado de facturas" Margin="0 10 0 10"></Label>
+        <ListBox ItemsSource="{Binding Invoices}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>
+                            <Label.Content>
+                                <TextBlock>
+                                <Run Text="{Binding Date, StringFormat={}{0:dd/MM/yyyy}}" />
+                                </TextBlock>
+                            </Label.Content>
+                        </Label>
+                        <Label>
+                            <Label.Content>
+                                <TextBlock>
+                                <Run Text="(" />
+                                <Run Text="{Binding Amount, StringFormat={}{0:C}}" />
+                                <Run Text=")" />
+                                </TextBlock>
+                            </Label.Content>
+                        </Label>
+                        <Button Content="x" HorizontalAlignment="Right"
+                            Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="{Binding}"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        
+    </StackPanel>
+</Window>
